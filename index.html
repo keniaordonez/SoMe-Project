@@ -1,164 +1,152 @@
-<html lang="en">
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- Somehow I got an error, so I comment the title, just uncomment to show -->
+    <!-- <title>Login Form Design | CodeLab</title> -->
+    <link rel="stylesheet" href="style.css">
+    <style>@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+html,body{
+  display: grid;
+  height: 100%;
+  width: 100%;
+  place-items: center;
+  background: #f2f2f2;
+}
+::selection{
+  background: #4158d0;
+  color: #fff;
+}
+.wrapper{
+  width: 380px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
+}
+.wrapper .title{
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 100px;
+  color: #fff;
+  user-select: none;
+  border-radius: 15px 15px 0 0;
+  background: #aecdcf;
+}
+.wrapper form{
+  padding: 10px 30px 50px 30px;
+}
+.wrapper form .field{
+  height: 50px;
+  width: 100%;
+  margin-top: 20px;
+  position: relative;
+}
+.wrapper form .field input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  font-size: 17px;
+  padding-left: 20px;
+  border: 1px solid lightgrey;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+.wrapper form .field input:focus,
+form .field input:valid{
+  border-color: #4158d0;
+}
+.wrapper form .field label{
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  color: #999999;
+  font-weight: 400;
+  font-size: 17px;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+}
+form .field input:focus ~ label,
+form .field input:valid ~ label{
+  top: 0%;
+  font-size: 16px;
+  color: #448a8a;
+  background: #fff;
+  transform: translateY(-50%);
+}
 
-<head>
+form .field input[type="submit"]{
+  color: #fff;
+  border: none;
+  padding-left: 0;
+  margin-top: -10px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  background: #aecdcf;
+  transition: all 0.3s ease;
+}
+form .field input[type="submit"]:active{
+  transform: scale(0.95);
+}
+form .signup-link{
+  color: #262626;
+  margin-top: 20px;
+  text-align: center;
+}
+form .pass-link a,
+form .signup-link a{
+  color: #4158d0;
+  text-decoration: none;
+}
+form .pass-link a:hover,
+form .signup-link a:hover{
+  text-decoration: underline;
+}
+</style>
+ <script type="text/javascript">
+		// PASSWORD PROTECTION SCRIPT		
+		function TheLogin() {
+		var password = 'eaaa';
+		var navn = 'group5';	
+		if (this.document.login.pass.value == password && this.document.login.name.value == navn) {
+		    window.alert("Congrats, your password is correct!");
+			top.location.href="strategy.html";
+		}
+		else {
+			if (this.document.login.pass.value != password && this.document.login.name.value != navn)
+				window.alert("Kodeord er forkert og Navn er ukendt- prøv veligst igen :-)");
+			else if (this.document.login.pass.value != password)
+				window.alert("Navn er kendt men Kodeord er forkert - prøv veligst igen :-)");
+			else if (this.document.login.name.value != navn)
+				window.alert("Navn er ukendt men kodeordet er rigtigt - prøv veligst igen :-)");	  		
+		  }
+		}
+	</script>
+  </head>
+ 
 
-    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie-edge">
-
-    <link rel="stylesheet" href="mystyle.css">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400&display=swap" rel="stylesheet">
-
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-
-    <title>SoMe Project</title>
-
-</head>
-
-<body>
-
+    <body>
+    
     <div class="wrapper">
-
-        <h1 class="main-title"><a href="index.html" class="main-title">SoMe strategy nuuii</a></h1>
-
-        <nav>
-
-            <div class="items">
-
-                <span class="item"><a href="StyleTone.html" class="item-link">Style and Tone</a></span>
-
-                <span class="item"><a href="Audience.html" class="item-link">Audience and Objectives</a></span>
-
-                <span class="item"><a href="Facebook.html" class="item-link">Facebook</a></span>
-
-                <span class="item"><a href="Instagram.html" class="item-link">Instagram</a></span>
-
-                <span class="item"><a href="Pinterest.html" class="item-link">Pinterest</a></span>
-
-                <span class="item"><a href="Calendar.html" class="item-link">Calendar</a></span>
-
-            </div>
-        </nav>
-
-        <!----------List--------->
-
-    </div>
-
-    <div class="list-div">
-
-
-        <div class="list-image">
-
-            <img class="list-image-detail" src="Images/Nuuii%20Web%20colors-01.png">
-
-        </div>
-
-        <h1 class="strategy-title">SoMe Strategy</h1>
-
-        <h2 class="goals-title">Setting our SoMe goals:</h2>
-        <p class="goals-text">The first step of our strategy is to set our goals and be clear of what the benefits of creating a SoMe strategy are.</p>
-
-        <ol>
-
-            <li class="list-text">
-                <h3 class="list-title">Our main goal is to generate more sales for nuuii:</h3> We want to showcase our new products through social media and in that way increase the reach those products can have.
-            </li>
-
-            <li class="list-text">
-                <h3 class="list-title">Our second goal is to boost community engagement:</h3> Users nowadays respond to brands that are aware of their position in their community. When creating a loyal customer base we can rely on those customers to share our posts, leave reviews and create user generated content that promotes nuuii.
-            </li>
-
-            <li class="list-text">
-                <h3 class="list-title">Our third goal is to drive more traffic to the website:</h3> We want to create links to our website through sponsored content and also we can track how many conversions we get from socials to actual sales when using promoted content.
-            </li>
-
-            <li class="list-text">
-                <h3 class="list-title">Our fourth goal is to create a recognisable corporate style/image:</h3> Expanding the reach also means that people will look at our ads and have no idea what nuuii is. We want to create a cohesive style that can be easily remembered and recognised when they scroll through their feed. This also increases brand awareness.
-            </li>
-
-            <li class="list-text">
-                <h3 class="list-title">Lastly, we assess what works and what didn’t:</h3> Expanding the reach also means that people will look at our ads and have no idea what nuuii is. We want to create a cohesive style that can be easily remembered and recognised when they scroll through their feed. This also increases brand awareness.
-            </li>
-
-        </ol>
-
-    </div>
-
-    <!----------Slider--------->
-
-    <div class="slider">
-
-        <input type="radio" name="slider" title="slide1" checked="checked" class="slider__nav" />
-        <input type="radio" name="slider" title="slide2" class="slider__nav" />
-        <input type="radio" name="slider" title="slide3" class="slider__nav" />
-        <input type="radio" name="slider" title="slide4" class="slider__nav" />
-
-        <div class="slider__inner">
-
-            <div class="slider__contents"><i class="slider__image fa fa-codepen"></i>
-
-                <h2 class="slider__caption">Setting our target audience and their preferred social media channels:</h2>
-                <p class="slider__txt">We selected facebook, pinterest and instagram as our distribution channels because they fit our target group. We will describe more in depth in our SoMe categories so click the specific channel on our navbar to know more.</p>
-
-                <div class="list-card">
-
-                    <p class="list-title">Target group:</p>
-                    <ul>
-                        <li class="list-text">Middle class</li>
-                        <li class="list-text">24-44 years old&nbsp;</li>
-                        <li class="list-text">Educated</li>
-                        <li class="list-text">Female</li>
-                        <li class="list-text">Gen x / Millennial</li>
-                        <li class="list-text">Lives in an urban hub</li>
-                        <li class="list-text">Nordic: Danish, Swedish</li>
-                    </ul>
-
-                </div>
-
-            </div>
-
-            <div class="slider__contents">
-
-                <h2 class="slider__caption">Keeping a cohesive social media theme:</h2>
-                <p class="slider__txt">We have shared in this e-document our brand guide and how to post on our different social media channels. We have included examples as well as the correct colors, our style is important as we discussed in our goals. The customer recognises brand colors and has a sense of familiarity when seeing cohesive content.
-                </p>
-
-                <div class="list-card">
-
-                    <p class="list-title">What content works best?</p>
-                    <ul>
-                        <li class="list-text">Information about the environment</li>
-                        <li class="list-text">fun facts</li>
-                        <li class="list-text">Educated</li>
-                        <li class="list-text">Product demo (illustration)</li>
-                        <li class="list-text">Infographics (charts) </li>
-                        <li class="list-text">Product pictures</li>
-                        <li class="list-text">Short informative articles</li>
-                    </ul>
-
-                </div>
-
-            </div>
-
-            <div class="slider__contents">
-                <h2 class="slider__caption">
-                    Posting at the correct times for each channel: </h2>
-                <p class="slider__txt">We want to ensure our community managers respond to people’s questions and read the reviews of our products. When posting in correct hours we also have a higher chance of engagement and therefore likes/comments. In our individual tabs we describe the best time to post for each distribution channel.
-                </p>
-            </div>
-
-            <div class="slider__contents">
-
-                <h2 class="slider__caption">Our social media strategy calendar:</h2>
-                <p class="slider__txt">Keeping our posts scheduled and planned is important to the process of creating original and creative content. We included the calendar in our tab and it is easily accessible for further examination.</p>
-
-            </div>
-
-        </div>
-    </div>
-
+      <div class="title">
+Login Form</div>
+<form name="login" style="margin: 5px 0px 0px 0px;">
+    Username<br>
+			<input type="text" name="name" size="17" onkeydown="if(event.keyCode==13) event.keyCode=9;" style="width: 130px;"><br>
+			<br>Password:<br>
+			<input type="text" name="pass" size="17" onkeydown="if(event.keyCode==13) event.keyCode=9;" style="width: 130px;"><br><br>
+			<input type="button" value="Login" style="width: 134px; margin: 4px auto 4px auto;" onclick="javascript:TheLogin(this.form)">
+			</form>
+</div>
 
 </body>
 
