@@ -113,11 +113,12 @@ hr {
 }
 
 .ktfb {
-	height: 40%;
+	height: 48%;
 	float: right;
 	position: relative;
 	overflow: hidden;
 	bottom: 11rem;
+	right: 2rem;
 }
 
 .kttitle2 {
