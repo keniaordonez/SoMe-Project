@@ -99,15 +99,16 @@ hr {
 	font-family: 'Poppins', sans-serif;
     font-weight: 620;
     text-align: left;
-    color: #3d3d3d;
-    font-size: 40px;
+    color: #3D4444;
+    font-size: 30px;
+    margin-top: 80px;
 }
 
 .ktp {
 	font-family: 'Poppins', sans-serif;
     font-weight: 400;
     text-align: justify;
-    color: black;
+    color: #3D4444;
     font-size: 17px;
     text-decoration: none;
 }
@@ -125,7 +126,7 @@ hr {
 	font-family: 'Poppins', sans-serif;
     font-weight: 300;
     text-align: left;
-    color: black;
+    color: #3D4444;
     margin-bottom: 2px;
 	padding-top: 150px;
     font-size: 30px;
